@@ -5,7 +5,1677 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
-    <!-- Latest compiled and minified CSS -->
+    <style>
+
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: black;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+figcaption,
+figure {
+  display: block;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+main {
+  display: block;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+audio,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+input {
+  overflow: visible;
+}
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  color: inherit;
+  white-space: normal;
+}
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+details {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+menu {
+  display: block;
+}
+canvas {
+  display: inline-block;
+}
+[hidden],
+template {
+  display: none;
+}
+:first-child {
+  margin-top: 0;
+}
+:last-child {
+  margin-bottom: 0;
+}
+body {
+  font-family: Open Sans, sans-serif;
+}
+.h1,
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-top: 1.6785em;
+  margin-bottom: 0.3em;
+}
+.h2,
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 0.9em;
+  margin-bottom: 0.45em;
+}
+.h3,
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 1.33em;
+  margin-bottom: 0.66em;
+}
+.h4,
+h4 {
+  font-size: 1.25rem;
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+}
+.h4,
+.h5,
+h4,
+h5 {
+  line-height: 1.1;
+}
+.h5,
+h5 {
+  font-size: 1.1rem;
+  margin-top: 1.125em;
+  margin-bottom: 0.9em;
+}
+.h6,
+h6 {
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+a {
+  color: inherit;
+}
+hr {
+  border: none;
+  height: 0.1875rem;
+  background: #000;
+}
+.bold {
+  font-weight: 600;
+}
+.sentence-case {
+  text-transform: none;
+}
+.section-heading {
+  padding-bottom: 1.125rem;
+  position: relative;
+}
+.section-heading:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8.5rem;
+  height: 0.375rem;
+  background: #48acaf;
+}
+.with__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.with__logo div {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  margin: 0 0 0.75rem;
+}
+@media (min-width: 541px) {
+  .with__logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .with__logo div {
+    -webkit-box-ordinal-group: initial;
+    -ms-flex-order: initial;
+    order: 0;
+    margin: 0 0 0 1.5rem;
+  }
+}
+#donation-form .current-info,
+#donation-form .title,
+.form .checkbox__control input,
+.form .radio__option input,
+.sr__input,
+.sr__label,
+.sr__text {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+#donation-form .actions ul,
+#donation-form .steps ul,
+.form .errorlist,
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  display: none;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+@media (min-width: 768px) {
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+.page-header {
+  padding: 1.5rem 0;
+}
+.page-header__buttons {
+  margin-left: auto;
+}
+.background__image {
+  background: black
+    url("https://helprefugees.contentfiles.net/media/thumbs/b9/8d/b98de32e9ec53fe7c838b54a44aec776.jpg")
+    50%/cover no-repeat;
+}
+.page__title {
+  color: #fff;
+  margin: 1.5rem 0;
+}
+@media (max-width: 540px) {
+  .page__title {
+    margin: 4.5rem 0 0.75rem;
+    font-size: 2.25rem;
+  }
+}
+.background__image,
+.page__wrapper {
+  background: url("https://helprefugees.contentfiles.net/media/thumbs/b9/8d/b98de32e9ec53fe7c838b54a44aec776.jpg")
+    50%/cover no-repeat;
+}
+.page__wrapper {
+  min-height: 100vh;
+  background-attachment: fixed;
+  padding: 0;
+}
+@media (min-width: 541px) {
+  .page__wrapper {
+    padding: 2.25rem 1.5rem 3rem;
+  }
+}
+.page__header {
+  background: url("https://helprefugees.contentfiles.net/media/thumbs/b9/8d/b98de32e9ec53fe7c838b54a44aec776.jpg")
+    50%/cover no-repeat;
+  padding: 0.75rem;
+}
+@media (min-width: 541px) {
+  .page__header {
+    background: none !important;
+    padding: 0 0 3rem;
+  }
+}
+.page__layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  max-width: 130.5rem;
+}
+@media (min-width: 1000px) {
+  .page__layout {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+}
+.page__panel {
+  padding: 0.75rem;
+  background: #fff;
+}
+@media (min-width: 541px) {
+  .page__panel {
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 961px) {
+  .page__panel + .page__panel {
+    margin-top: 1.5rem;
+  }
+}
+.page__layout-column {
+  min-width: 0;
+  width: 100%;
+}
+@media (min-width: 961px) {
+  .page__layout-column + .page__layout-column {
+    margin-left: 1.5rem;
+  }
+  .page__layout-column.side__column {
+    width: 25rem;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+}
+.donate-section {
+  position: relative;
+}
+.donate-section iframe {
+  -webkit-transition: height 0.15s;
+  transition: height 0.15s;
+}
+.donate-section:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: inset 0 0 0.75rem 0.375rem #fff;
+  box-shadow: inset 0 0 0.75rem 0.375rem #fff;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media (min-width: 541px) {
+  .donate-section:after {
+    -webkit-box-shadow: inset 0 0 1.5rem 0.75rem #fff;
+    box-shadow: inset 0 0 1.5rem 0.75rem #fff;
+  }
+}
+.recent-section {
+  background: #f8f8f8;
+}
+.video-section {
+  width: 100%;
+  height: 0;
+  padding: 0 0 56.25%;
+  position: relative;
+  background: #000;
+}
+.video-section iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.icon {
+  width: 1.125em;
+  height: 1.125em;
+  fill: currentColor;
+}
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.social > li + li {
+  margin-left: 1.5rem;
+}
+.btn,
+.button {
+  display: inline-block;
+  padding: 0.75rem;
+  text-decoration: none;
+  background: #d73322;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (min-width: 421px) {
+  .btn.big,
+  .button.big {
+    font-size: 1.5rem;
+  }
+}
+.btn:hover,
+.button:hover {
+  background: #dd3a29;
+}
+.btn.secondary,
+.button.secondary {
+  background: #48acaf;
+  color: #fff;
+}
+.btn.secondary:hover,
+.button.secondary:hover {
+  background: #4eb3b6;
+}
+.btn.supporter,
+.button.supporter {
+  background: #e691ac;
+  color: #fff;
+}
+.btn.supporter:hover,
+.button.supporter:hover {
+  background: #e89bb4;
+}
+.btn.outline,
+.button.outline {
+  background: #f8f8f8;
+  border: 2px solid #e6e6e6;
+}
+.btn.outline:hover,
+.button.outline:hover {
+  background: #e6e6e6;
+}
+.btn.social-button,
+.button.social-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 0.875rem;
+}
+.btn.social-button .icon,
+.button.social-button .icon {
+  margin-right: 0.375rem;
+}
+.btn.facebook,
+.button.facebook {
+  background: #395ca9;
+}
+.btn.facebook:hover,
+.button.facebook:hover {
+  background: #335296;
+}
+.btn.twitter,
+.button.twitter {
+  background: #1997f0;
+}
+.btn.twitter:hover,
+.button.twitter:hover {
+  background: #0f8ae1;
+}
+.button__row {
+  margin-top: 2.25rem;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+figure {
+  margin: 0;
+}
+figcaption {
+  display: block;
+  vertical-align: top;
+  padding: 0.5rem;
+  background: #d73322;
+  color: #fff;
+  font-size: 0.875rem;
+}
+.brand__logo {
+  display: inline-block;
+  width: 4.5rem;
+  height: 3.75rem;
+  margin-top: 0.6em;
+  vertical-align: top;
+  background: url("https://donate.helprefugees.org/static/img/logo.98ea238835a5.svg")
+    0/contain no-repeat;
+}
+.brand__logo:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.brand__logo.color {
+  width: 100%;
+  height: 7rem;
+  background: url("https://donate.helprefugees.org/static/img/logo.98ea238835a5.svg")
+    0/contain no-repeat;
+}
+@media (min-width: 541px) {
+  .brand__logo {
+    width: 7rem;
+    height: 5.25rem;
+  }
+  .brand__logo.color {
+    width: 7rem;
+  }
+}
+#campaign-logo-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 4.5em;
+}
+#campaign-logo-flex .campaign__logo {
+  height: 70%;
+  width: auto;
+}
+@media (min-width: 541px) {
+  #campaign-logo-flex {
+    height: 6em;
+  }
+  #campaign-logo-flex .campaign__logo {
+    height: 80%;
+  }
+}
+.profile {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.profile__location,
+.profile__name {
+  margin: 0;
+}
+.profile__name {
+  margin-bottom: 0.375rem;
+  font-weight: 600;
+}
+.profile__picture {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #48acaf;
+  margin: 0 1.125rem 0 0;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.progress-bar {
+  width: 100%;
+  height: 1.125rem;
+  background: #e6e6e6;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.progress-bar .progress-complete {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #d73322;
+  max-width: 100%;
+}
+.form button,
+.form input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  border: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  background: #d73322;
+  color: #fff;
+  font-weight: 700;
+}
+.form button:hover,
+.form input[type="submit"]:hover {
+  background: #dd3a29;
+}
+.form .errorlist {
+  margin-bottom: 1.5rem;
+  color: #d73322;
+  font-weight: 700;
+}
+.form label.error {
+  display: block;
+  background: #d73322;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.375rem;
+}
+.payment-error {
+  background: orange;
+  color: #fff;
+  padding: 0.5em;
+  margin: 0 0 0.5em;
+}
+.form .help-block,
+.form .help-inline {
+  display: block;
+  vertical-align: top;
+  padding: 0.5rem;
+  background: #d73322;
+  color: #fff;
+  font-size: 0.875rem;
+}
+.form .help-block {
+  background: #fff;
+}
+.form .radio__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.form .radio__option {
+  margin-right: 1.125rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.form .radio__option label {
+  display: block;
+  padding: 0.75rem 0;
+  background: #d73322;
+  cursor: pointer;
+  text-align: center;
+  background: #f8f8f8;
+  border: 2px solid #e6e6e6;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.form .radio__option input:checked + label {
+  background: #d73322;
+  border-color: #d73322;
+  color: #fff;
+}
+.form .radio__option:last-of-type {
+  margin-right: 0;
+}
+.form #div_id_recurrence .radio__select {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+@media (min-width: 421px) {
+  .form #div_id_recurrence .radio__select {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+}
+.form #div_id_recurrence .radio__option {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  margin-right: 0;
+}
+.form #div_id_recurrence .radio__option + .radio__option {
+  margin-top: 0.375rem;
+}
+@media (min-width: 421px) {
+  .form #div_id_recurrence .radio__option {
+    width: auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-right: 1.125rem;
+  }
+  .form #div_id_recurrence .radio__option:last-of-type {
+    margin-right: 0;
+  }
+  .form #div_id_recurrence .radio__option + .radio__option {
+    margin-top: 0;
+  }
+}
+.form input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+.form select,
+.form textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border: 2px solid #e6e6e6;
+  border-radius: 0.125rem;
+  background: #fff;
+  vertical-align: top;
+  font-size: inherit;
+  font-family: inherit;
+  resize: vertical;
+  border-radius: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+}
+.form
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):focus,
+.form select:focus,
+.form textarea:focus {
+  border-color: #a6a6a6;
+}
+.form
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]).error,
+.form select.error,
+.form textarea.error {
+  border-color: #d73322;
+}
+.form .checkbox__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.form .checkbox__control label {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form .checkbox__control .checkbox__status {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 2px solid #d73322;
+  top: 0;
+  left: 0;
+  margin-right: 0.75rem;
+  border-radius: 2px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  min-width: 0;
+}
+.form .checkbox__control input:checked + label .checkbox__status {
+  background: #d73322;
+  position: relative;
+}
+.form .checkbox__control input:checked + label .checkbox__status:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+  transform: rotate(45deg) translate(-50%, -50%);
+}
+.form .checkboxes .control-group {
+  margin-bottom: 0.75rem;
+}
+.form__halves {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.form__halves > div {
+  width: calc(50% - 0.5625rem);
+}
+.form__halves > div + div {
+  margin-left: 1.125rem;
+}
+.form__thirds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.form__thirds > div {
+  width: 100%;
+}
+@media (min-width: 541px) and (max-width: 850px) {
+  .form__thirds > div {
+    width: 100%;
+    margin-top: 1.125rem;
+  }
+  .form__thirds > div:nth-of-type(-n + 2) {
+    width: calc(50% - 0.5625rem);
+    margin-top: 0;
+  }
+  .form__thirds > div:first-of-type {
+    margin-right: 1.125rem;
+  }
+}
+@media (min-width: 851px) {
+  .form__thirds {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+  .form__thirds > div {
+    width: calc(33.33333% - 0.75rem);
+  }
+  .form__thirds > div + div {
+    margin-left: 1.125rem;
+  }
+}
+.form .StripeElement {
+  padding: 0.75rem 0;
+}
+.form.supporter__form
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):focus,
+.form.supporter__form select:focus,
+.form.supporter__form textarea:focus {
+  -webkit-box-shadow: 0 0 8px 2px #e691ac;
+  box-shadow: 0 0 8px 2px #e691ac;
+  border-color: #e6e6e6;
+}
+.form.supporter__form .control-group > label {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.form.supporter__form .controls > .help-block {
+  background: none;
+  color: inherit;
+  margin-top: 0;
+  background: #e6e6e6;
+}
+.supporter__form-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e691ac;
+  margin-bottom: 1.5rem;
+}
+.supporter__form-heading span {
+  margin-left: 1.125rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #e691ac;
+}
+@media (min-width: 541px) {
+  .supporter__form-heading span {
+    display: inline-block;
+  }
+}
+.supporter__form-footer {
+  text-align: center;
+  margin: 2.25rem 0;
+}
+.image__uploader {
+  margin-bottom: 1.125rem;
+  max-width: 450px;
+}
+@media (min-width: 750px) {
+  .image__uploader {
+    width: calc(50% - 0.575em);
+    float: left;
+  }
+  .image__uploader + .image__uploader {
+    margin-left: 1.125em;
+  }
+}
+.custom__image-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 10rem;
+  background: url("../img/bg.704fbb40c424.jpg") 50%/cover no-repeat;
+}
+.custom__image-preview.no__preview {
+  opacity: 0.375;
+}
+#div_id_fundraiser_image + .custom__image-field .no__preview {
+  background: url("../img/profile.39b34eb6d674.svg") 50%/8rem no-repeat, #e6e6e6;
+}
+#div_id_fundraiser_image + .custom__image-field .no__preview span {
+  color: inherit;
+}
+.custom__image-wrapper {
+  width: 100%;
+}
+.custom__image-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.custom__image-field .help-block {
+  background: none;
+  margin: 0.375rem 0 0;
+  color: #000;
+  padding: 0.5em 0 0;
+  line-height: 1.5;
+}
+.custom__image-field .help-block span {
+  display: block;
+  margin: 0.375rem 0;
+}
+.custom__image-upload .button {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.375rem;
+  cursor: pointer;
+}
+.custom__default {
+  color: #fff;
+}
+.custom__image-upload-title {
+  margin-top: 0.75rem;
+}
+.form fieldset {
+  padding: 0;
+  border: none;
+}
+.form .tablist {
+  @extends %reset-list;
+}
+.form .control-group {
+  margin-bottom: 1.125rem;
+}
+.form .control-group > label {
+  display: block;
+  margin-bottom: 0.375rem;
+}
+.form #div_id_amount,
+.form #div_id_currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.form #div_id_amount label,
+.form #div_id_currency label {
+  margin: 0 1.125rem 0 0;
+}
+.form #div_id_amount .controls,
+.form #div_id_currency .controls {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 0;
+}
+#donation-form {
+  position: relative;
+}
+#donation-form .donation__summary {
+  margin-top: 1.5rem;
+}
+#donation-form .donation__summary.intermediary {
+  margin: 0 0 1.125rem;
+}
+#donation-form .donation__title {
+  font-size: 1.125rem;
+  color: #d73322;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#donation-form .donation__amount {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0.375rem 0;
+}
+#donation-form .donation__amount + p {
+  margin-top: 0.75rem;
+}
+#donation-form #gift_aid_toggle {
+  cursor: pointer;
+  font-size: 0;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #48acaf;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 0.375rem;
+}
+#donation-form #gift_aid_toggle:after {
+  content: "i";
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: #fff;
+}
+#donation-form .gift-aid__information {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.75rem;
+  background: #f5bf57;
+  overflow: auto;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+#donation-form .gift-aid__information h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 1.2;
+}
+#donation-form .gift-aid__information h3 span {
+  margin-left: 1.125rem;
+  cursor: pointer;
+}
+#donation-form .actions ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+#donation-form .actions li a {
+  display: block;
+  padding: 0.75rem;
+  background: #d73322;
+  cursor: pointer;
+  text-align: center;
+  background: #f8f8f8;
+  border: 2px solid #e6e6e6;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+}
+#donation-form .actions li:nth-of-type(n + 2) a {
+  background: #d73322;
+  border-color: #d73322;
+  color: #fff;
+}
+#donation-form .actions li.disabled {
+  pointer-events: none;
+  color: #e6e6e6;
+}
+#donation-form .steps {
+  padding: 0 0 1.5rem;
+  position: relative;
+}
+#donation-form .steps:after {
+  content: "";
+  display: inline-block;
+  width: 10rem;
+  height: 0.375rem;
+  background: #000;
+}
+#donation-form .steps ul {
+  position: relative;
+  height: 2.25rem;
+}
+#donation-form .steps li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 5.25rem;
+}
+#donation-form .steps li .tab__title {
+  display: none;
+  text-transform: uppercase;
+}
+#donation-form .steps li:nth-of-type(2) {
+  padding-right: 2.625rem;
+}
+#donation-form .steps li:nth-of-type(3) {
+  padding-right: 0;
+}
+#donation-form .steps li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+}
+#donation-form .steps li a span {
+  -webkit-box-ordinal-group: 101;
+  -ms-flex-order: 100;
+  order: 100;
+}
+#donation-form .steps .number {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  border: 1px solid #e6e6e6;
+  background: #e6e6e6;
+  border-radius: 1.125rem;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-left: auto;
+}
+#donation-form .steps li.current .tab__title {
+  display: block;
+}
+#donation-form .steps li.current .number {
+  background: #fff;
+  color: inherit;
+}
+.donation__thankyou {
+  padding: 1.125rem;
+}
+@media (min-width: 421px) {
+  .donation__thankyou {
+    padding: 1.875rem;
+  }
+}
+.donation__thankyou-title {
+  margin: 1.875rem 0 0;
+  color: #fff;
+}
+.donation__thankyou-subtitle {
+  margin: 0.375rem 0 1.5rem;
+}
+.donation__thankyou-content {
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  background: #fff;
+  max-width: 35rem;
+}
+.donation__thankyou-content .share__bar {
+  margin-top: 1.5rem;
+}
+.donation__thankyou-content .share__bar a {
+  margin-bottom: 0.25rem;
+}
+.campaign__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 541px) {
+  .campaign__stats {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+}
+.campaign__user {
+  width: 100%;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+@media (min-width: 541px) {
+  .campaign__user {
+    width: auto;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+.campaign__status + .campaign__user {
+  margin-bottom: 1.125rem;
+}
+@media (min-width: 541px) {
+  .campaign__status + .campaign__user {
+    margin-bottom: 0;
+  }
+}
+.campaign__target {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.375rem;
+}
+.campaign__header-image {
+  margin-bottom: 1.125rem;
+}
+.campaign__raised {
+  margin: 0;
+}
+.campaign__body {
+  line-height: 1.5;
+}
+#campaign_readmore {
+  display: block;
+  font-weight: 800;
+  color: #48acaf;
+  text-decoration: none;
+}
+#campaign_readmore .less {
+  display: none;
+  margin-top: 0.75rem;
+}
+#campaign_readmore.active .more {
+  display: none;
+}
+#campaign_readmore.active .less {
+  display: block;
+}
+@media (min-width: 541px) {
+  #campaign_readmore {
+    display: none;
+  }
+}
+.campaign__body-holder {
+  max-height: 200rem;
+}
+@media (max-width: 540px) {
+  .campaign__body-holder.minimised {
+    max-height: 20rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .campaign__body-holder.minimised:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 7.5rem;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0)),
+      color-stop(97.5%, #fff),
+      to(#fff)
+    );
+    background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0) 0,
+      #fff 97.5%,
+      #fff
+    );
+  }
+}
+.recent__dontation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.recent__dontation + .recent__dontation {
+  margin-top: 1.5rem;
+}
+.recent__dontation:nth-of-type(2) {
+  opacity: 0.675;
+}
+.recent__dontation:nth-of-type(3) {
+  opacity: 0.5;
+}
+.recent__dontation:nth-of-type(4) {
+  opacity: 0.25;
+}
+.recent__dontation:nth-of-type(5) {
+  opacity: 0.125;
+}
+@media (min-width: 541px) {
+  .recent__dontation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+.recent__amount {
+  width: 100%;
+}
+.recent__amount .h3 {
+  margin: 0 0 0.375rem;
+  line-height: 1;
+}
+@media (min-width: 541px) {
+  .recent__amount {
+    width: 5rem;
+    margin: 0 0.75rem 1.5rem 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+}
+.recent__detail {
+  line-height: 1.5;
+}
+.recent__detail p {
+  margin: 0;
+}
+.recent__detail .recent__date {
+  opacity: 0.5;
+}
+@media (min-width: 541px) {
+  .recent__detail .recent__date {
+    margin-top: 0.375rem;
+  }
+}
+.donation__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.donation__item {
+  width: 100%;
+  text-decoration: none;
+  line-height: 1.5;
+}
+.donation__item p {
+  margin: 0;
+}
+.donation__item:hover .donation__item-header .icon {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.donation__item:hover .donation__item-header .icon__type {
+  -webkit-transform: scale(1.125);
+  transform: scale(1.125);
+}
+.donation__item:hover p {
+  text-decoration: underline;
+}
+@media (max-width: 540px) {
+  .donation__item:nth-of-type(n + 2) {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 541px) {
+  .donation__item {
+    width: calc(50% - 0.75rem);
+  }
+  .donation__item:nth-of-type(2n) {
+    margin-left: 1.5rem;
+  }
+  .donation__item:nth-of-type(n + 3) {
+    margin-top: 1.5rem;
+  }
+}
+.donation__item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: #d73322;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.375rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.donation__item-header .icon {
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+.donation__item-header span {
+  margin: 0 auto 0 0.75rem;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+@media (min-width: 541px) {
+  .show__mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 540px) {
+  .hide__mobile {
+    display: none !important;
+  }
+}
+@media (min-width: 961px) {
+  .show__tablet {
+    display: none !important;
+  }
+}
+@media (max-width: 960px) {
+  .hide__tablet {
+    display: none !important;
+  }
+}
+
+
+
+
+
+    </style>
+    
+   <!-- Latest compiled and minified CSS -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
@@ -16,25 +1686,100 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <br><br>
-        <h1 class="text-center">Instant Payment</h1>
+    
+    
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <symbol id="linkedin" viewBox="0 0 24 28"> <title>linkedin</title> <path d="M3.703 22.094h3.609v-10.844h-3.609v10.844zM7.547 7.906c-0.016-1.062-0.781-1.875-2.016-1.875s-2.047 0.812-2.047 1.875c0 1.031 0.781 1.875 2 1.875h0.016c1.266 0 2.047-0.844 2.047-1.875zM16.688 22.094h3.609v-6.219c0-3.328-1.781-4.875-4.156-4.875-1.937 0-2.797 1.078-3.266 1.828h0.031v-1.578h-3.609s0.047 1.016 0 10.844v0h3.609v-6.062c0-0.313 0.016-0.641 0.109-0.875 0.266-0.641 0.859-1.313 1.859-1.313 1.297 0 1.813 0.984 1.813 2.453v5.797zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z"></path> </symbol> <symbol id="twitter" viewBox="0 0 26 28"> <title>twitter</title> <path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path> </symbol> <symbol id="facebook" viewBox="0 0 16 28"> <title>facebook</title> <path d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z"></path> </symbol> <symbol id="github" viewBox="0 0 24 28"> <title>github</title> <path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path> </symbol> <symbol id="pinterest" viewBox="0 0 24 28"> <title>pinterest</title> <path d="M24 14c0 6.625-5.375 12-12 12-1.188 0-2.312-0.172-3.406-0.5 0.453-0.719 0.969-1.641 1.219-2.562 0 0 0.141-0.531 0.844-3.297 0.406 0.797 1.625 1.5 2.922 1.5 3.859 0 6.484-3.516 6.484-8.234 0-3.547-3.016-6.875-7.609-6.875-5.688 0-8.563 4.094-8.563 7.5 0 2.063 0.781 3.906 2.453 4.594 0.266 0.109 0.516 0 0.594-0.313 0.063-0.203 0.187-0.734 0.25-0.953 0.078-0.313 0.047-0.406-0.172-0.672-0.484-0.578-0.797-1.313-0.797-2.359 0-3.031 2.266-5.75 5.906-5.75 3.219 0 5 1.969 5 4.609 0 3.453-1.531 6.375-3.813 6.375-1.25 0-2.188-1.031-1.891-2.312 0.359-1.516 1.062-3.156 1.062-4.25 0-0.984-0.531-1.813-1.625-1.813-1.281 0-2.312 1.328-2.312 3.109 0 0 0 1.141 0.391 1.906-1.313 5.563-1.547 6.531-1.547 6.531-0.219 0.906-0.234 1.922-0.203 2.766-4.234-1.859-7.187-6.078-7.187-11 0-6.625 5.375-12 12-12s12 5.375 12 12z"></path> </symbol> <symbol id="left" viewBox="0 0 11 28"> <title>left</title> <path d="M9.797 8.5c0 0.125-0.063 0.266-0.156 0.359l-6.141 6.141 6.141 6.141c0.094 0.094 0.156 0.234 0.156 0.359s-0.063 0.266-0.156 0.359l-0.781 0.781c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-7.281-7.281c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l7.281-7.281c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l0.781 0.781c0.094 0.094 0.156 0.219 0.156 0.359z"></path> </symbol> <symbol id="right" viewBox="0 0 9 28"> <title>right</title> <path d="M9.297 15c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-0.781-0.781c-0.094-0.094-0.156-0.219-0.156-0.359 0-0.125 0.063-0.266 0.156-0.359l6.141-6.141-6.141-6.141c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l7.281 7.281c0.094 0.094 0.156 0.234 0.156 0.359z"></path> </symbol> <symbol id="up" viewBox="0 0 18 28"> <title>up</title> <path d="M16.797 18.5c0 0.125-0.063 0.266-0.156 0.359l-0.781 0.781c-0.094 0.094-0.219 0.156-0.359 0.156-0.125 0-0.266-0.063-0.359-0.156l-6.141-6.141-6.141 6.141c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-0.781-0.781c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l7.281-7.281c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l7.281 7.281c0.094 0.094 0.156 0.234 0.156 0.359z"></path> </symbol> <symbol id="down" viewBox="0 0 18 28"> <title>down</title> <path d="M16.797 11.5c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-7.281-7.281c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.219-0.156 0.359-0.156 0.125 0 0.266 0.063 0.359 0.156l6.141 6.141 6.141-6.141c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l0.781 0.781c0.094 0.094 0.156 0.234 0.156 0.359z"></path> </symbol> <symbol id="youtube" viewBox="0 0 24 28"> <title>youtube</title> <path d="M15.172 19.437v3.297c0 0.703-0.203 1.047-0.609 1.047-0.234 0-0.469-0.109-0.703-0.344v-4.703c0.234-0.234 0.469-0.344 0.703-0.344 0.406 0 0.609 0.359 0.609 1.047zM20.453 19.453v0.719h-1.406v-0.719c0-0.703 0.234-1.062 0.703-1.062s0.703 0.359 0.703 1.062zM5.359 16.047h1.672v-1.469h-4.875v1.469h1.641v8.891h1.563v-8.891zM9.859 24.938h1.391v-7.719h-1.391v5.906c-0.313 0.438-0.609 0.656-0.891 0.656-0.187 0-0.297-0.109-0.328-0.328-0.016-0.047-0.016-0.219-0.016-0.547v-5.688h-1.391v6.109c0 0.547 0.047 0.906 0.125 1.141 0.125 0.391 0.453 0.578 0.906 0.578 0.5 0 1.031-0.313 1.594-0.953v0.844zM16.562 22.625v-3.078c0-0.719-0.031-1.234-0.141-1.547-0.172-0.578-0.562-0.875-1.109-0.875-0.516 0-1 0.281-1.453 0.844v-3.391h-1.391v10.359h1.391v-0.75c0.469 0.578 0.953 0.859 1.453 0.859 0.547 0 0.938-0.297 1.109-0.859 0.109-0.328 0.141-0.844 0.141-1.563zM21.844 22.469v-0.203h-1.422c0 0.562-0.016 0.875-0.031 0.953-0.078 0.375-0.281 0.562-0.625 0.562-0.484 0-0.719-0.359-0.719-1.078v-1.359h2.797v-1.609c0-0.828-0.141-1.422-0.422-1.813-0.406-0.531-0.953-0.797-1.656-0.797-0.719 0-1.266 0.266-1.672 0.797-0.297 0.391-0.438 0.984-0.438 1.813v2.703c0 0.828 0.156 1.437 0.453 1.813 0.406 0.531 0.953 0.797 1.687 0.797s1.313-0.281 1.687-0.828c0.172-0.25 0.297-0.531 0.328-0.844 0.031-0.141 0.031-0.453 0.031-0.906zM12.344 8.203v-3.281c0-0.719-0.203-1.078-0.672-1.078-0.453 0-0.672 0.359-0.672 1.078v3.281c0 0.719 0.219 1.094 0.672 1.094 0.469 0 0.672-0.375 0.672-1.094zM23.578 19.938c0 1.797-0.016 3.719-0.406 5.469-0.297 1.234-1.297 2.141-2.5 2.266-2.875 0.328-5.781 0.328-8.672 0.328s-5.797 0-8.672-0.328c-1.203-0.125-2.219-1.031-2.5-2.266-0.406-1.75-0.406-3.672-0.406-5.469v0c0-1.813 0.016-3.719 0.406-5.469 0.297-1.234 1.297-2.141 2.516-2.281 2.859-0.313 5.766-0.313 8.656-0.313s5.797 0 8.672 0.313c1.203 0.141 2.219 1.047 2.5 2.281 0.406 1.75 0.406 3.656 0.406 5.469zM7.984 0h1.594l-1.891 6.234v4.234h-1.563v-4.234c-0.141-0.766-0.453-1.859-0.953-3.313-0.344-0.969-0.688-1.953-1.016-2.922h1.656l1.109 4.109zM13.766 5.203v2.734c0 0.828-0.141 1.453-0.438 1.844-0.391 0.531-0.938 0.797-1.656 0.797-0.703 0-1.25-0.266-1.641-0.797-0.297-0.406-0.438-1.016-0.438-1.844v-2.734c0-0.828 0.141-1.437 0.438-1.828 0.391-0.531 0.938-0.797 1.641-0.797 0.719 0 1.266 0.266 1.656 0.797 0.297 0.391 0.438 1 0.438 1.828zM19 2.672v7.797h-1.422v-0.859c-0.562 0.656-1.094 0.969-1.609 0.969-0.453 0-0.781-0.187-0.922-0.578-0.078-0.234-0.125-0.609-0.125-1.172v-6.156h1.422v5.734c0 0.328 0 0.516 0.016 0.547 0.031 0.219 0.141 0.344 0.328 0.344 0.281 0 0.578-0.219 0.891-0.672v-5.953h1.422z"></path> </symbol> <symbol id="instagram" viewBox="0 0 24 28"> <title>instagram</title> <path d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM18.156 14c0 3.406-2.75 6.156-6.156 6.156s-6.156-2.75-6.156-6.156 2.75-6.156 6.156-6.156 6.156 2.75 6.156 6.156zM19.844 7.594c0 0.797-0.641 1.437-1.437 1.437s-1.437-0.641-1.437-1.437 0.641-1.437 1.437-1.437 1.437 0.641 1.437 1.437zM12 4.156c-1.75 0-5.5-0.141-7.078 0.484-0.547 0.219-0.953 0.484-1.375 0.906s-0.688 0.828-0.906 1.375c-0.625 1.578-0.484 5.328-0.484 7.078s-0.141 5.5 0.484 7.078c0.219 0.547 0.484 0.953 0.906 1.375s0.828 0.688 1.375 0.906c1.578 0.625 5.328 0.484 7.078 0.484s5.5 0.141 7.078-0.484c0.547-0.219 0.953-0.484 1.375-0.906s0.688-0.828 0.906-1.375c0.625-1.578 0.484-5.328 0.484-7.078s0.141-5.5-0.484-7.078c-0.219-0.547-0.484-0.953-0.906-1.375s-0.828-0.688-1.375-0.906c-1.578-0.625-5.328-0.484-7.078-0.484zM24 14c0 1.656 0.016 3.297-0.078 4.953-0.094 1.922-0.531 3.625-1.937 5.031s-3.109 1.844-5.031 1.937c-1.656 0.094-3.297 0.078-4.953 0.078s-3.297 0.016-4.953-0.078c-1.922-0.094-3.625-0.531-5.031-1.937s-1.844-3.109-1.937-5.031c-0.094-1.656-0.078-3.297-0.078-4.953s-0.016-3.297 0.078-4.953c0.094-1.922 0.531-3.625 1.937-5.031s3.109-1.844 5.031-1.937c1.656-0.094 3.297-0.078 4.953-0.078s3.297-0.016 4.953 0.078c1.922 0.094 3.625 0.531 5.031 1.937s1.844 3.109 1.937 5.031c0.094 1.656 0.078 3.297 0.078 4.953z"></path> </symbol> <symbol id="email" viewBox="0 0 28 28"> <title>email</title> <path d="M28 10.219v15.281c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-15.281c0-0.141 0.063-0.281 0.172-0.375 1.641-1.437 1.656-1.609 9.812-7.562 0.984-0.719 2.719-2.281 4.016-2.281s3.047 1.578 4.016 2.281c8.156 5.953 8.172 6.125 9.812 7.562 0.109 0.094 0.172 0.234 0.172 0.375zM19.187 19.359c2.438-1.766 4.141-3 5.391-3.938 0.219-0.156 0.266-0.469 0.094-0.688l-0.594-0.812c-0.172-0.219-0.484-0.266-0.703-0.094-1.234 0.906-2.922 2.156-5.359 3.906-0.969 0.703-2.719 2.266-4.016 2.266s-3.047-1.563-4.016-2.266c-2.438-1.766-4.125-3-5.359-3.906-0.219-0.172-0.531-0.125-0.703 0.094l-0.594 0.812c-0.172 0.219-0.125 0.531 0.094 0.688 1.25 0.938 2.953 2.172 5.391 3.938 1.219 0.875 3.141 2.641 5.187 2.641 2.063 0 4.031-1.797 5.187-2.641z"></path> </symbol> <symbol id="menu" viewBox="0 0 28 28"> <title>menu</title> <path d="M3.5 7.583h21v2.352h-21v-2.352zM3.5 15.732v-2.297h21v2.297h-21zM3.5 21.583v-2.352h21v2.352h-21z"></path> </symbol> <symbol id="close" viewBox="0 0 28 28"> <title>close</title> <path d="M22.148 8.076l-6.508 6.508 6.508 6.508-1.641 1.641-6.508-6.508-6.508 6.508-1.641-1.641 6.508-6.508-6.508-6.508 1.641-1.641 6.508 6.508 6.508-6.508z"></path> </symbol> <symbol id="item4" viewBox="0 0 36 32"> <title>blanket</title> <path d="M31.31 9.027c-0.287 0.441-0.427 0.836-0.706 1.049-0.742 0.564-1.121 1.345-1.449 2.162-0.628 1.565-1.595 2.851-3.093 3.654-1.298 0.692-2.629 1.332-3.968 1.944-0.509 0.231-0.872 0.521-1.045 1.060-0.115 0.376-0.309 0.719-0.777 0.739-0.023 0.002-0.051 0.003-0.078 0.003-0.403 0-0.744-0.269-0.852-0.637l-0.002-0.006c-0.25-0.827-0.857-1.046-1.603-1.305-3.284-1.136-6.183-2.908-8.432-5.601-0.493-0.589-0.814-1.337-1.14-2.046-0.284-0.619-0.549-1.211-1.154-1.615-0.427-0.285-0.751-0.692-0.648-1.258 0.097-0.535 0.565-0.692 1-0.849 0.288-0.105 0.584-0.191 0.881-0.269 0.692-0.179 1.234-0.561 1.714-1.096 1.602-1.79 3.441-3.237 5.847-3.796 0.197-0.054 0.431-0.097 0.671-0.12l0.017-0.001c0.422-0.029 0.722-0.158 0.962-0.569 0.358-0.615 1.038-0.638 1.46-0.014 0.353 0.52 0.807 0.664 1.357 0.807 2.827 0.745 5.063 2.422 7.010 4.534 0.092 0.095 0.177 0.198 0.252 0.308l0.005 0.008c0.698 1.084 1.595 1.88 2.896 2.192 0.307 0.073 0.542 0.437 0.873 0.722zM18.571 2.261c0.892 0.346 1.73 0.613 2.513 1.004 2.214 1.111 3.812 2.87 5.050 4.982 0.196 0.335 0.461 0.498 0.807 0.285s0.231-0.525 0.050-0.807c-1.154-1.786-2.57-3.297-4.464-4.309-1.143-0.638-2.491-1.053-3.927-1.152l-0.030-0.002zM18.129 16.61c-0.723-1.299-1.887-1.782-3.218-2.157 0.69 1.338 1.72 2.021 3.218 2.157zM11.741 11.934c0.473 1.262 1.345 1.904 2.641 2.030-0.325-1.012-1.414-1.852-2.643-2.035zM9.156 9.404c0.333 1.13 1.246 1.945 2.205 2.001-0.302-1.108-1.129-1.873-2.205-2.001z"></path> <path d="M21.626 25.064l-19.717-10.338 5.269-4.161c2.403 4.268 6.251 6.566 10.655 8.141 0.185 0.066 0.33 0.266 0.473 0.422 0.37 0.403 0.66 0.931 1.107 1.198 0.899 0.536 1.951 0.149 2.393-0.835 0.241-0.536 0.594-0.816 1.128-1.024 1.070-0.42 2.155-0.841 3.15-1.406 1.621-0.923 2.999-2.126 3.743-3.909 0.258-0.614 0.546-1.216 0.841-1.812 0.346-0.692 1.013-0.933 1.703-0.627 0.98 0.435 1.961 0.873 3.014 1.343l-4.614 4.314 0.857-2.020-0.125-0.068z"></path> <path d="M14.557 32c-1.269-1.17-2.489-2.276-3.674-3.421-0.141-0.136-0.141-0.497-0.092-0.729 0.084-0.401 0-0.637-0.386-0.818-0.481-0.231-0.934-0.514-1.418-0.787l0.446-1.175c-0.732 0.047-1.377 0.072-2.017 0.136-0.333 0.033-0.526-0.068-0.684-0.368-0.323-0.61-0.709-1.188-1.021-1.804-0.186-0.368-0.448-0.482-0.825-0.479-0.844 0.008-1.689 0-2.561 0l-2.325-6.455c0.301-0.134 0.57-0.231 0.818-0.369 0.296-0.162 0.508-0.106 0.769 0.115q4.037 3.384 8.103 6.742c0.774 0.642 1.55 1.285 2.405 1.865l-0.585-1.397 6.931 4.095z"></path> <path d="M29.152 28.596l-6.238-3.114 13.487-12.482c-0.027 0.309-0.043 0.516-0.063 0.722-0.060 0.591 0.067 1.323-0.239 1.73-0.284 0.377-1.032 0.401-1.575 0.587-0.589 0.202-0.882 1.137-0.514 1.632 0.1 0.135 0.195 0.273 0.346 0.489l-2.114 0.94c0.080 0.241 0.163 0.567 0.295 0.871s0.078 0.503-0.218 0.656c-0.187 0.097-0.346 0.25-0.534 0.34-0.305 0.144-0.373 0.366-0.266 0.66 0.123 0.346 0.027 0.577-0.276 0.78-0.247 0.183-0.463 0.364-0.669 0.556l0.005-0.004c-0.889 0.743-0.923 0.759-0.396 1.763 0.26 0.497 0.253 0.905 0.014 1.401-0.378 0.789-0.685 1.614-1.044 2.473z"></path> </symbol> <symbol id="family" viewBox="0 0 25 32"> <title>family</title> <path d="M12.593 3.707c1.523 0.6 3.113 1.144 4.625 1.852 1.019 0.478 1.941 1.171 2.88 1.807 0.329 0.247 0.612 0.528 0.853 0.843l0.008 0.010c0.316 0.383 0.656 0.89 0.323 1.315-0.235 0.3-0.805 0.505-1.202 0.474-0.801-0.077-1.538-0.258-2.228-0.53l0.055 0.019c-1.522-0.565-3.013-1.206-4.664-1.315-1.021-0.065-1.845 0.178-2.416 0.707 0.79 0.049 1.66-0.029 2.451 0.183 1.088 0.291 2.129 0.769 3.171 1.226 1.152 0.506 2.266 1.091 3.559 1.177 1.801 0.122 2.805-0.594 3.216-2.329 0.794 0.563 1.545 2.29 1.585 3.644 0.057 2.019-1.072 3.414-3.069 3.755-2.134 0.356-4.056-0.366-5.909-1.283-2.084-1.038-4.217-1.916-6.545-2.204-2.402-0.296-4.718-0.060-6.685 1.511-0.635 0.507-1.116 1.21-1.668 1.829-0.593-0.965-0.722-2.155-0.854-3.345-0.459-4.012 1.428-6.799 4.634-8.902 0.288-0.176 0.537-0.372 0.761-0.594l-0 0c3.081-3.32 6.859-4.201 11.163-3.122 2.102 0.527 4.024 1.417 5.425 3.162 0.302 0.373 0.558 0.801 0.75 1.262l0.013 0.034c0.195 0.488-0.022 0.901-0.546 1.037-0.833 0.215-1.669 0.302-2.488-0.11-2.007-1.011-4.103-1.756-6.341-2.034-0.304-0.038-0.604-0.057-0.856-0.080z"></path> <path d="M19.468 29.266l0.278-1.627c-1.796 2.661-4.131 4.355-7.407 4.364s-5.624-1.686-7.438-4.358c0.024 0.198 0.046 0.396 0.076 0.594 0.033 0.22 0.072 0.438 0.109 0.657-1.951-0.86-4.175-6.352-3.762-9.351 0.5 0.65 0.937 1.301 1.457 1.878 1.869 2.073 4.128 3.285 7.002 2.927 0.751-0.095 1.471-0.429 2.212-0.624 0.228-0.060 0.518-0.107 0.719-0.021 3.258 1.407 6.619 0.682 9.024-2.014 0.64-0.718 1.185-1.521 1.805-2.324-0.066 3.774-1.091 7.131-4.074 9.899z"></path> <path d="M18.79 22.387c-1.287 0.926-2.683 0.928-4.107 0.422-0.705-0.275-1.31-0.589-1.875-0.959l0.038 0.024c-0.34-0.209-0.566-0.244-0.913 0-1.177 0.807-2.462 1.344-3.929 1.239-0.451-0.033-0.895-0.173-1.434-0.284 1.204-0.976 2.282-1.884 3.407-2.732 0.669-0.505 1.427-0.802 2.261-0.288 0.043 0.023 0.094 0.036 0.149 0.036 0.047 0 0.092-0.010 0.133-0.028l-0.002 0.001c0.794-0.476 1.499-0.143 2.171 0.261 0.868 0.523 1.696 1.113 2.569 1.627 0.465 0.273 0.989 0.444 1.533 0.682z"></path> <path d="M4.206 16.054c0.452-0.202 0.921-0.415 1.393-0.622 0.995-0.433 1.84-1.26 3.031-1.189 0.449 0.020 0.872 0.111 1.263 0.264l-0.027-0.009c0.176 0.072 0.332 0.398 0.333 0.61 0 0.115-0.33 0.291-0.534 0.337-1.097 0.244-2.208 0.451-3.313 0.671-0.762 0.151-1.529 0.348-2.146-0.061z"></path> </symbol> <symbol id="item3" viewBox="0 0 45 32"> <title>financial</title> <path d="M35.749 13.447c-0.084 1.463-0.561 2.8-1.325 3.926l0.017-0.027c-1.549 2.395-3.726 4.082-6.326 5.143-6.776 2.761-13.458 2.677-19.861-1.104-2.706-1.599-4.547-3.95-5.153-7.13-0.032-0.166-0.052-0.334-0.068-0.503-0.010-0.118 0-0.238 0-0.494 1.383 1.737 3.146 2.732 5.075 3.488 2.101 0.828 4.538 1.419 7.076 1.659l0.108 0.008c4.639 0.466 9.229 0.247 13.723-1.099 1.933-0.581 3.778-1.346 5.358-2.658 0.469-0.4 0.926-0.818 1.376-1.209z"></path> <path d="M30.362 5.743l-4.608 11.1c-4.082-0.846-7.919-2.090-11.265-4.56-1.206-0.892-2.427-1.777-3.967-2.013-0.328-0.051-0.666-0.042-1.080-0.065l0.671-1.292c2.87 1.286 5.936 0.243 7.387-2.518 1.43-2.72-0.112-5.271-3.098-5.281 0.080-0.727 0.529-1.017 1.187-1.090 1.19-0.129 2.152 0.414 3.095 1.033 1.030 0.676 2.035 1.388 3.11 1.994 2.412 1.366 5.086 1.947 7.773 2.479 0.166 0.033 0.331 0.067 0.496 0.106 0.068 0.012 0.134 0.044 0.299 0.108zM24.18 12.778c-0.244-0.352-0.373-0.753-0.581-0.801-0.436-0.1-1.051-0.189-1.341 0.038-0.436 0.344-0.718 0.939-0.968 1.471-0.206 0.436-0.302 0.962 0.241 1.286s1.144 0.333 1.535-0.134c0.445-0.542 0.734-1.211 1.115-1.86zM24.509 14.813c0.278-0.674 0.546-1.286 0.775-1.914 0.048-0.129-0.057-0.315-0.092-0.474-0.16 0.052-0.417 0.060-0.465 0.163-0.404 0.886-0.77 1.79-1.151 2.694 0.798 0.262 1.353 0.093 1.616-0.469z"></path> <path d="M11.044 5.248c-0.872 1.648-1.651 3.199-2.524 4.691-0.753 1.288-0.798 2.494 0.089 3.685-0.564 0.498-1.088 0.995-1.654 1.442-0.145 0.109-0.487 0.145-0.609 0.055-0.891-0.692-1.857-1.33-2.591-2.168-0.978-1.118-0.99-2.526-0.052-3.671 0.67-0.782 1.435-1.455 2.284-2.010l0.041-0.025c1.472-0.991 3.158-1.527 5.017-2z"></path> <path d="M32.248 15.404l-2.457-2.017 2.546-6.603c0.942 0.821 1.875 1.475 2.598 2.314 1.090 1.263 1.051 2.858-0.093 4.092-0.773 0.836-1.739 1.488-2.594 2.215z"></path> <path d="M10.414 8.353l0.716-1.308 0.621 0.727c0.523-0.243 1.103-0.452 1.615-0.769 0.302-0.173 0.502-0.493 0.502-0.86 0-0.179-0.048-0.347-0.131-0.492l0.003 0.005c-0.417-0.696-0.090-1.177 0.238-1.709l0.366-0.597c0.061 0.001 0.119 0.012 0.174 0.030l-0.004-0.001c0.209 0.129 0.414 0.266 0.621 0.4-0.064-0.314-0.141-0.583-0.235-0.843l0.013 0.041c-0.108-0.192-0.229-0.358-0.368-0.507l0.002 0.002-0.982 0.177c0.108-0.727 0.538-0.888 1.148-0.844 1.978 0.145 3.052 1.642 2.5 3.536-0.612 2.107-3.11 3.778-5.288 3.488-0.481-0.064-0.942-0.291-1.508-0.474z"></path> <path d="M4.579 24.247c1.213 0.282 2.437 0.528 3.633 0.872 0.307 0.089 0.523 0.493 0.78 0.751-0.247 0.241-0.453 0.59-0.75 0.705-2.443 0.943-4.906 0.93-7.368 0.051-0.168-0.068-0.312-0.149-0.445-0.247l0.006 0.004c-0.565-0.385-0.596-0.846 0.041-1.070 1.081-0.382 2.221-0.6 3.342-0.872 0.23-0.054 0.482-0.007 0.727-0.007z"></path> <path d="M40.443 18.47c1.264 0.336 2.494 0.581 3.659 1.001 0.805 0.291 0.825 0.834 0.055 1.2-0.697 0.339-1.506 0.594-2.356 0.721l-0.046 0.006c-1.787 0.254-3.575 0.196-5.253-0.581-0.31-0.145-0.522-0.498-0.777-0.757 0.256-0.235 0.475-0.603 0.773-0.683 1.286-0.34 2.61-0.609 3.946-0.907z"></path> <path d="M32.291 30.567c-1.213-0.291-2.436-0.536-3.633-0.872-0.298-0.084-0.516-0.455-0.77-0.695 0.26-0.259 0.475-0.635 0.789-0.757 2.417-0.934 4.86-0.927 7.3-0.064 0.216 0.087 0.402 0.194 0.571 0.324l-0.006-0.004c0.459 0.326 0.472 0.762-0.026 0.95-0.799 0.302-1.81 0.607-2.845 0.853l-0.182 0.036c-0.365 0.090-0.77 0.015-1.163 0.015z"></path> <path d="M7.397 15.682c1.195-1.397 1.71-1.61 2.518-1.064l-1.009 0.727c0.501 0.392 0.914 0.455 1.344 0.042 0.384-0.368 0.82-0.395 1.331-0.241 2.795 0.844 5.596 1.661 8.395 2.491 0.115 0.035 0.211 0.101 0.283 0.188l0.001 0.001c-4.409 0.118-8.708-0.352-12.864-2.143z"></path> <path d="M24.805 17.686c-0.891-0.086-1.635-0.044-2.308-0.241-3.081-0.904-6.138-1.889-9.209-2.819-0.898-0.275-1.827-0.456-2.715-0.757-0.75-0.253-1.367-0.714-1.648-1.516s0.105-1.513 0.969-1.536c0.027-0.001 0.059-0.001 0.091-0.001 0.524 0 1.023 0.112 1.472 0.313l-0.023-0.009c0.837 0.37 1.558 0.792 2.223 1.282l-0.032-0.022c3.098 2.338 6.589 3.816 10.302 4.831 0.209 0.057 0.419 0.115 0.625 0.182 0.036 0.012 0.060 0.065 0.251 0.295zM15.887 14.791l0.051-0.087c-1.261-0.872-2.505-1.786-3.794-2.623-0.475-0.309-1.029-0.546-1.623-0.677l-0.033-0.006c-0.302-0.064-0.754 0.128-0.981 0.359-0.115 0.116 0.039 0.648 0.222 0.872 0.255 0.314 0.587 0.554 0.968 0.694l0.015 0.005c1.715 0.519 3.448 0.979 5.175 1.463z"></path> <path d="M8.958 26.93c0.196 0.639-0.105 1.064-0.626 1.222-0.795 0.267-1.743 0.492-2.718 0.633l-0.091 0.011c-0.392 0.056-0.844 0.089-1.305 0.089-1.147 0-2.247-0.2-3.268-0.568l0.067 0.021c-0.622-0.224-1.148-0.549-0.974-1.411 2.967 1.215 5.915 1.222 8.914 0.003z"></path> <path d="M34.344 24.052c2.992 1.225 5.925 1.227 8.884-0.010 0.221 0.716-0.203 1.068-0.769 1.308-1.558 0.67-3.197 0.727-4.849 0.57-0.941-0.103-1.799-0.301-2.616-0.587l0.081 0.025c-0.708-0.234-0.811-0.542-0.731-1.305z"></path> <path d="M27.928 30.061c2.988 1.199 5.912 1.215 8.843 0.015 0.17 0.616 0.145 0.872-0.445 1.116-0.656 0.3-1.419 0.533-2.216 0.662l-0.052 0.007c-1.709 0.238-3.422 0.203-5.086-0.356-0.908-0.308-1.115-0.629-1.043-1.443z"></path> <path d="M35.773 21.152c2.292 1.163 6.172 1.308 8.882 0 0.24 0.727-0.211 1.112-0.761 1.308-0.604 0.234-1.311 0.419-2.044 0.524l-0.053 0.006c-1.668 0.221-3.342 0.17-4.953-0.358-0.965-0.307-1.177-0.637-1.071-1.481z"></path> <path d="M30.769 6.259c0.512 0.215 0.639 0.475 0.436 0.979q-1.825 4.62-3.594 9.264c-0.187 0.493-0.468 0.683-1.062 0.622z"></path> <path d="M42.308 23.897c-0.834 0.145-1.663 0.346-2.502 0.429-1.632 0.161-3.244 0.038-4.751-0.674-0.273-0.129-0.609-0.436-0.635-0.686s0.331-0.501 0.523-0.759c2.241 1.889 4.796 1.641 7.333 1.495z"></path> <path d="M29.511 14.082l1.973 1.572-3.001 1.126z"></path> <path d="M12.419 4.739c0.594 0.916-0.379 1.385-0.639 2.068-0.529-0.886 0.449-1.365 0.639-2.068z"></path> <path d="M12.268 7.012l0.792-1.405c0.469 0.788 0.25 1.209-0.792 1.405z"></path> <path d="M13.11 4.615c-0.362-0.926-0.17-1.266 0.828-1.492z"></path> <path d="M21.79 13.951c0.233-0.5 0.394-0.962 0.658-1.354 0.108-0.16 0.436-0.173 0.664-0.253 0.051 0.208 0.192 0.446 0.134 0.615-0.175 0.491-0.387 0.914-0.642 1.307l0.014-0.024c-0.078 0.122-0.387 0.173-0.559 0.132-0.115-0.028-0.18-0.278-0.269-0.423z"></path> </symbol> <symbol id="item1" viewBox="0 0 32 32"> <title>health</title> <path d="M15.996 31.999c-8.975-0.047-16.042-7.17-15.996-16.122 0.038-8.777 7.162-15.878 15.944-15.878 0.054 0 0.108 0 0.163 0.001l-0.008-0c8.908 0.045 15.974 7.251 15.9 16.216-0.072 8.729-7.271 15.83-16.003 15.782zM15.947 28.23c6.667 0.072 12.176-5.357 12.276-12.082 0.095-6.78-5.332-12.299-12.176-12.381-6.671-0.081-12.236 5.426-12.28 12.15-0 0.022-0 0.047-0 0.073 0 6.74 5.446 12.207 12.178 12.242h0.003z"></path> <path d="M13.297 8.036c1.694 0 3.268 0 4.843 0 0.153 0 0.306 0.022 0.529 0.038v5.204h5.235v5.391h-5.208v5.245h-5.365v-5.211h-5.258v-5.369h5.225z"></path> </symbol> <symbol id="item2" viewBox="0 0 39 32"> <title>food</title> <path d="M30.813 14.867l5.224-0.345c0 0.95-0.014 1.836 0 2.721 0.040 2.029 0.074 4.059 0.158 6.085 0.033 0.828-0.215 1.444-0.969 1.819-3.82 1.9-7.662 3.761-11.453 5.718-2.319 1.197-4.635 1.425-7.179 0.792-1.922-0.475-3.94-0.584-5.921-0.817-1.518-0.177-3.046-0.271-4.564-0.445-1.729-0.196-2.251-0.758-2.25-2.517 0-2.952 0.060-5.905 0.095-8.857-0.002-0.038-0.003-0.082-0.003-0.127 0-0.095 0.005-0.188 0.015-0.28l-0.001 0.011c0.187-1.086-0.223-1.813-1.089-2.533-2.123-1.787-3.253-4.076-2.762-6.926 0.348-2.023 1.627-3.432 3.261-4.575 1.953-1.358 4.176-1.982 6.483-2.359 4.187-0.676 8.37-1.403 12.571-1.979 3.973-0.546 7.904-0.256 11.637 1.346 2.193 0.94 3.983 2.375 4.907 4.68 0.849 2.126 0.432 4.285-1.159 5.636-0.471 0.371-1.018 0.675-1.61 0.884l-0.040 0.012c-1.697 0.647-3.415 1.24-5.123 1.857-0.047 0.016-0.078 0.055-0.23 0.199zM5.884 21.58q-0.025 0.868-0.046 1.741c-0.025 1.065-0.078 2.14-0.014 3.198 0.040 0.655 0 1.468 0.646 1.858 0.347 0.212 0.78 0.247 1.176 0.247 3.315 0 6.568 0.453 9.804 1.133 1.879 0.396 2.101 0.182 2.104-1.768 0-2.981 0.123-5.97-0.041-8.941-0.109-1.985 0.484-3.237 2.346-4.029 1.322-0.564 1.923-1.776 1.865-3.223-0.092-2.297-1.368-3.95-3.111-5.257-2.997-2.265-6.451-2.748-10.070-2.383-2.479 0.252-4.808 0.974-6.744 2.626-2.118 1.802-2.435 4.44-0.728 6.622 0.633 0.818 1.46 1.515 2.281 2.162 0.475 0.374 0.641 0.728 0.633 1.312-0.013 0.505-0.021 1.013 0.013 1.515 0.036 0.532-0.038 1.094-0.057 1.627s-0.041 1.032-0.057 1.558zM24.492 3.628c0.019 0.222 0.013 0.255 0.025 0.268 0.072 0.073 0.149 0.141 0.231 0.202l0.005 0.004c2.166 1.482 4.274 3.008 5.134 5.685 0.092 0.283 0.655 0.568 0.999 0.567 0.302 0 0.766-0.345 0.866-0.633 0.030-0.118 0.047-0.253 0.047-0.393 0-0.295-0.076-0.572-0.209-0.813l0.004 0.009c-1.499-2.824-4.141-4.008-7.102-4.895zM29.511 2.894c0.063 0.182 0.067 0.249 0.1 0.274 0.158 0.128 0.342 0.244 0.511 0.367 1.724 1.266 3.47 2.509 4.167 4.702 0.185 0.581 0.703 0.69 1.238 0.484s0.723-0.681 0.502-1.162c-0.299-0.66-0.659-1.229-1.087-1.74l0.009 0.012c-1.116-1.297-2.633-1.988-4.201-2.569-0.377-0.139-0.773-0.231-1.238-0.367z"></path> <path d="M13.38 8.349c-0.051-0.12-0.215-0.317-0.193-0.489 0.084-0.657 1.119-1.623 1.754-1.607 0.168 0 0.475 0.317 0.475 0.475-0.044 0.628-1.235 1.626-2.036 1.621z"></path> <path d="M18.509 12.571c-0.328-0.95-0.038-1.721 0.749-2.117 0.495 0.709 0.149 1.735-0.749 2.117z"></path> <path d="M10.132 10.985c-0.863-0.337-1.225-1.040-1.029-1.912 0.83 0.142 1.255 0.901 1.029 1.912z"></path> <path d="M12.421 11.023l-1.023-0.94c0.22-0.141 0.503-0.445 0.651-0.389 0.397 0.158 0.738 0.454 1.108 0.697z"></path> <path d="M4.194 10.667c-0.359-0.695-0.209-1.208 0.51-1.741 0.435 0.636 0.242 1.297-0.51 1.741z"></path> <path d="M15.11 10.312c0.723 0.402 0.78 1.002 0.633 1.708-0.736-0.274-0.939-0.817-0.633-1.708z"></path> <path d="M18.142 9.213c-0.804 0.355-1.352 0.223-1.963-0.374 0.788-0.28 1.358-0.274 1.963 0.374z"></path> <path d="M21.302 9.011l0.754 1.366-0.272 0.158c-0.598-0.261-0.834-0.725-0.757-1.365z"></path> <path d="M8.222 7.675l-0.651 0.687c-0.111-0.158-0.351-0.393-0.307-0.486 0.135-0.292 0.334-0.534 0.579-0.717l0.005-0.003c0.109-0.076 0.388 0.089 0.59 0.142z"></path> <path d="M10.466 6.122l1.156 0.888-0.266 0.359-1.2-0.841z"></path> <path d="M7.48 10.956c-0.564-0.174-0.633-0.554-0.527-0.988 0.075-0.068 0.174-0.11 0.284-0.11 0.028 0 0.055 0.003 0.081 0.008l-0.003-0c0.344 0.301 0.442 0.657 0.165 1.091z"></path> </symbol> <symbol id="item6" viewBox="0 0 41 32"> <title>safety</title> <path d="M24.507 9.485c0.915-0.586 1.765-0.426 2.447 0.475 0.699 0.926 0.84 2.030 0.993 3.134q1.126 8.53 2.27 17.059c0.011 0.091 0.009 0.182 0.013 0.284-0.96-0.664-1.921-1.292-2.837-1.986-0.174-0.132-0.19-0.512-0.226-0.785-0.709-5.455-1.419-10.912-2.141-16.367-0.088-0.594-0.333-1.168-0.519-1.814z"></path> <path d="M11.122 1.68c0.895 0.549 1.787 1.088 2.674 1.656 0.135 0.116 0.226 0.28 0.248 0.465l0 0.003c0.304 2.003 0.582 4.010 0.884 6.015 0.505 3.356 1.006 6.713 1.546 10.064 0.112 0.691 0.416 1.351 0.567 2.037 0.047 0.207-0.023 0.552-0.17 0.672-0.724 0.592-1.709 0.44-2.156-0.46-0.427-0.829-0.753-1.791-0.929-2.804l-0.009-0.060c-0.925-5.876-1.783-11.759-2.656-17.588z"></path> <path d="M0 12.888c1.844 0.312 3.589 0.56 5.318 0.914 2.195 0.448 4.371 0.993 6.558 1.474 0.426 0.095 0.624 0.291 0.671 0.748 0.091 0.885 0.255 1.762 0.413 2.793-1.088-0.187-2.083-0.319-3.059-0.535-3.155-0.695-6.306-1.419-9.454-2.146-0.167-0.038-0.426-0.223-0.426-0.348-0.035-0.938-0.023-1.875-0.023-2.9z"></path> <path d="M41.299 19.242c-1.69-0.284-3.369-0.498-5.023-0.851-2.239-0.47-4.459-1.033-6.682-1.578-0.187-0.045-0.458-0.227-0.485-0.382-0.169-1.011-0.296-2.039-0.453-3.21l12.646 3.040z"></path> <path d="M23.321 22.382c-0.865 0.823-1.924 0.759-2.464-0.339-0.415-0.853-0.734-1.842-0.908-2.881l-0.009-0.064c-0.44-2.554-0.766-5.13-1.159-7.693-0.104-0.501-0.231-0.931-0.388-1.347l0.020 0.061c-0.196-0.624 0.011-0.941 0.66-0.993 0.86-0.077 1.922 0.875 2.064 1.797 0.481 3.051 0.96 6.1 1.49 9.147 0.135 0.783 0.453 1.525 0.694 2.311z"></path> <path d="M25.845 22.797c-0.777 0.207-1.393 0.035-1.735-0.719-0.396-0.827-0.715-1.787-0.906-2.793l-0.012-0.074c-0.484-2.837-0.851-5.686-1.302-8.525-0.062-0.397-0.331-0.762-0.511-1.153 0.277-0.242 0.642-0.389 1.042-0.389 0.59 0 1.105 0.322 1.379 0.8l0.004 0.008c0.279 0.475 0.476 1.031 0.556 1.625l0.003 0.023c0.504 3.5 0.965 7.007 1.437 10.511 0.031 0.23 0.031 0.464 0.045 0.687z"></path> <path d="M20.079 22.64c-0.695 0.532-1.627 0.441-2.074-0.552-0.454-1.007-0.815-2.18-1.026-3.403l-0.013-0.088c-0.369-2.141-0.6-4.297-0.899-6.445-0.108-0.767-0.294-1.525-0.369-2.294-0.067-0.691 0.352-0.952 1.009-0.653 0.78 0.356 1.122 1.081 1.254 1.853 0.426 2.461 0.75 4.94 1.18 7.4 0.24 1.38 0.609 2.737 0.938 4.182z"></path> <path d="M13.527 32c-1.311-1.309-2.312-2.695-2.016-4.629 0.4-2.61 0.787-5.222 1.345-7.9 0.102 0.157 0.261 0.302 0.299 0.475 0.27 1.183 0.567 2.345 1.519 3.206 0.069 0.095 0.111 0.213 0.111 0.341 0 0.038-0.004 0.075-0.011 0.111l0.001-0.004q-0.614 4.205-1.248 8.4z"></path> <path d="M28.6 12.539q-0.082-0.389-0.166-0.779c-0.234-1.107-0.628-2.114-1.549-2.864-0.133-0.138-0.215-0.326-0.215-0.533 0-0.021 0.001-0.041 0.002-0.061l-0 0.003c0.294-2.554 0.611-5.107 0.949-7.866 0.599 0.594 1.088 1.101 1.6 1.585 0.655 0.62 0.908 1.284 0.75 2.246-0.426 2.554-0.697 5.143-1.034 7.716-0.024 0.18-0.081 0.357-0.122 0.535z"></path> <path d="M34.677 13.773l6.571-1.036v2.739l-6.557-1.454z"></path> <path d="M6.433 18.353l-6.354 0.915v-2.528l6.355 1.454z"></path> <path d="M11.207 0l2.653 2.284-0.194 0.228c-1.047-0.567-1.975-1.294-2.681-2.278z"></path> <path d="M12.189 13.586l0.132 1.075-2.063-0.525-0.011-0.15z"></path> <path d="M31.098 18.025l-1.77 0.363-0.070-0.915 1.833 0.444z"></path> </symbol></defs> </svg>
+
+<div class="page__wrapper">
+
+  <header class="page__header">
+
+    <a class="brand__logo" href="https://helprefugees.org/"></a>
+
+    <div id="campaign-logo-flex">
+
+    </div>
+    <h1 class="page__title">
+      <span><b>Make a Difference</b></span>
+    </h1>
+
+    <h4 style="margin-left:100px;"><b>A Sparks Foundation initiative</b></h4>
+    <hr>
+    <div class="share__bar">
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdonate.helprefugees.org%2Fcampaigns%2Fdonate%2F" class="button social-button twitter">
+          <svg class="icon" target="_blank" rel="noopener">
+            <use xlink:href="#twitter"></use>
+          </svg>
+          Share on Twitter
+        </a>
+      <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fdonate.helprefugees.org%2Fcampaigns%2Fdonate%2F" class="button social-button facebook" target="_blank" rel="noopener">
+          <svg class="icon">
+            <use xlink:href="#facebook"></use>
+          </svg>
+          Share on Facebook
+        </a>
+    </div>
+  </header>
+
+  <div class="page__layout">
+    <div class="page__layout-column">
+      <div class="page__panel content-section">
+
+        <img src="https://helprefugees.contentfiles.net/media/thumbs/b9/8d/b98de32e9ec53fe7c838b54a44aec776.jpg" class="campaign__header-image">
+
+        <div class="campaign__body">
+          <div class="campaign__body-holder ">
+            <h3 class="section-heading">About this campaign</h3>
+            <p><a href="https://helprefugees.org">Help Refugees</a> provides funding, support and volunteers to more than 80 projects across the world. 94% of the funds we raise are directly spent on supporting refugees.<br />
+              <br /> Our work ranges from life-saving emergency to susatinable initiatives providing education, long-term housing and more.</p>
+
+            <p>We will always make sure your donations go where they&rsquo;re most needed. <a href="https://helprefugees.org/projects">Read more about our work here.</a></p>
+
+            <p><em>&ldquo;Help Refugees is one of the unsung heroes of the European refugee crisis, a young grassroots collective that has tried to create a more dynamic form of aid, where even seasoned aid workers admit their traditional models have failed.&rdquo; &ndash; Patrick Kingsley, The Guardian.</em></p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="page__layout-column side__column" style="width:450px;">
+      <div class="page__panel donate-section">
         <form action="/pay" method="post">
-<div class="form-group">
-    <input type="text" placeholder="Name" name="name" class="form-control" required>
+          <legend style="color:red;"><b><u>Payment</u></b></legend>
+          <br>
+          <br>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="card-holder-name">Name</label>
+              <br>
+<div class="form-group" style="border:2px;">
+    <input type="text" placeholder="Full Name" name="name" class="form-control" required>
 </div>
+              <br><br>
+          
+              <label class="col-sm-3 control-label" for="card-holder-name">Email</label>
+              <br>
 <div class="form-group">
     <input type="email" placeholder="Email" name="email" class="form-control" required>
 </div>
-<div class="form-group">
+          <br>
+              <br>
+          
+              <label class="col-sm-3 control-label" for="card-holder-name">Amount</label>
+<br>
+              <div class="form-group">
     <input type="number" placeholder="Amount" name="amount" class="form-control" required>
 </div>
+          <br><br>
 <div class="form-group">
     <button class="btn btn-danger btn-block">Donate</button>
 </div>
         </form>
-
+      </div>
     </div>
+  </div>
+</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://pym.nprapps.org/pym.v1.min.js"></script>
 </body>
 </html>

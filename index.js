@@ -51,7 +51,7 @@ Insta.createPayment(data, function (error, response) {
     } else {
       // Payment redirection link at response.payment_request.longurl
       console.log(response)
-      res.send("Please check your email to make payment")
+      res.send("<h1>Please check your email to make payment</h1>")
     }
   });
 });
